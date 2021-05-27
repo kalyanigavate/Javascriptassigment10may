@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+		
+			/*function vowel_count(str1)
+			{
+			  var vowel_list = 'a';
+			  var vcount = 0;
+			  
+			  for(var x = 0; x < str1.length ; x++)
+			  {
+			    if (vowel_list.indexOf(str1[x]) !== -1)
+			    {
+			   
+			      vcount += 1;
+			    }
+			  
+			  }
+			  return vcount;
+			}
+			var abc=(vowel_count("Hey This is Skillsanta JS Training"));
+			document.write("A:"+abc);
+			*/
+
+			function count(str)
+			{
+				let cA=0 ;
+				let cE=0 ;
+				let cI=0 ;
+				let cO=0 ;
+				let cU=0 ;
+				
+				for( var i=0; i<str.length; i++)
+				{
+					if(str[i]=='a')
+						cA++;
+					if(str[i]=='e')
+						cE++;
+					if(str[i]=='i')
+						cI++;
+					if(str[i]=='o')
+						cO++;
+					if(str[i]=='u')
+						cU++;
+
+				}
+				console.log('A :',cA);
+				console.log('E :',cE);
+				console.log('I :',cI);
+				console.log('O :',cO);
+				console.log('U :',cU);
+			}
+             
+             count("Hey This is Skillsanta JS Training");
+
+
+	</script>
+
+</body>
+</html>

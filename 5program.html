@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript program to reverse a given string.</title>
+</head>
+<body>
+		<script>
+			function string_reverse(str) 
+				{
+				    return str.split("").reverse().join("");
+				}
+
+			var a=string_reverse(prompt("enter a string"));
+			document.write(a + "  ");
+			const len = a.length;
+			for (var i = 0; i < len / 2; i++)
+				 {
+
+		       
+			       	 if (a[i] !== a[len - 1 - i]) 
+			       	 {
+			            document.write( ' : It is not a palindrome');
+			            break;
+	       			 }
+       			document.write(': It is  a palindrome');
+	       		break;	 
+       			}
+		</script>
+</body>
+</html>

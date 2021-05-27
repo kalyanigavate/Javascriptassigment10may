@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		
+		<script >
+			function stripHtml(html)
+			{
+			   
+			    var temporalPElement = document.createElement("p");
+			   
+			    temporalPElement.innerHTML = html;
+			    
+			    return temporalPElement.textContent || temporalPElement.innerText || "";
+			}
+			var htmlString ='<p><strong><em>"SkillSanta Assignments"</em></strong></p>';
+			console.log(stripHtml(htmlString));
+
+		</script>
+</body>
+</html>

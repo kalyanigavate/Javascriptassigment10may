@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+             Write a JavaScript program to pass a 'JavaScript function' as parameter.
+        </title> 
+    </head>     
+      
+    <body style = "text-align:center;"> 
+          
+        
+                    
+          
+        <button onclick = "geeks_outer('Geeks!', geeks_inner)"> 
+            Click Here 
+        </button>         
+          
+        
+        <script> 
+            function geeks_inner(value)
+            {
+                return 'hello '+value;
+            }
+            function geeks_outer(a, func)
+            {
+                alert(func(a));
+            }         
+        </script> 
+    </body> 
+</html>
